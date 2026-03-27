@@ -225,3 +225,20 @@ From there you can:
 - Add **environment variables** or integrations if you evolve beyond mock data.
 - Configure **GitHub Pages** or a cloud host (Vercel, etc.) for live demos.
 
+---
+
+## Auto-Deploy to GitHub Pages (Recommended)
+
+This repo includes `.github/workflows/deploy-pages.yml` to automatically deploy on every push to `main`.
+
+One-time GitHub setting:
+
+1. Go to **Repo Settings -> Pages**.
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+
+After that:
+
+- Push to `main`.
+- GitHub Actions builds static output from `out/` and deploys automatically.
+- Your site is served at `https://<username>.github.io/MBusa/`.
+

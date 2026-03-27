@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-mbBlack text-white;
+}
+
+.glass-panel {
+  @apply bg-mbDark/80 border border-white/5 rounded-xl shadow-subtle backdrop-blur-xl;
+}
+
